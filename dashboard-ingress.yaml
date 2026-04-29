@@ -4,6 +4,7 @@ metadata:
   name: dashboard-ingress
   namespace: kubernetes-dashboard
 spec:
+  ingressClassName: nginx
   rules:
   - host: dashboard.com
     http:
