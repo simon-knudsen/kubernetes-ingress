@@ -23,8 +23,7 @@ After applying the configuration, I checked that Kubernetes had accepted the Ing
 
 <br>
 
-![Output of kubectl get ingress](images/ingress%20dashboard.png)
-
+![Output of kubectl get ingress](images/ingress%20dashboard.png)<br>
 *The new `dashboard-ingress` is active, handled by NGINX and listening for `dashboard.com` on port 80.*
 
 <br>
@@ -35,8 +34,7 @@ I don't own `dashboard.com`, so on its own the domain would lead nowhere. To fix
 
 <br>
 
-![The dashboard.com entry in /etc/hosts](images/host%20link.png)
-
+![The dashboard.com entry in /etc/hosts](images/host%20link.png)<br>
 *The hosts file entry that points `dashboard.com` to my own machine.*
 
 <br>
@@ -47,8 +45,7 @@ Minikube runs the cluster in an isolated environment, so my machine can't reach 
 
 <br>
 
-![minikube tunnel running](images/tunnel%20open.png)
-
+![minikube tunnel running](images/tunnel%20open.png)<br>
 *The tunnel is running and forwarding traffic to the dashboard Ingress.*
 
 <br>
@@ -59,8 +56,7 @@ With everything in place, I opened `dashboard.com` in the browser and the Kubern
 
 <br>
 
-![The Kubernetes Dashboard at dashboard.com](images/dashboard-tunnel.png)
-
+![The Kubernetes Dashboard at dashboard.com](images/dashboard-tunnel.png)<br>
 *The Kubernetes Dashboard served at `dashboard.com`, showing the workloads running in the cluster.*
 
 <br>
